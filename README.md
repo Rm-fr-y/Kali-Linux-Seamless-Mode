@@ -9,7 +9,7 @@ Step by Step Guide:
 
 1. Open your Kali WSL installation and install Win-Kex (GUI for WSL).
 
-2. Edit the Kex script to update the IP connection to Vcxrv (I edited to adjust for OpenVPN connections)
+2. Edit the Kex script to update the IP connection to VcXsrv (I edited to adjust for OpenVPN connections)
 
 	1. Make sure to copy the script first -
 	```
@@ -33,11 +33,11 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
     		HOSTIP=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}')
 	fi
 
-3. Download the Bat script here and place it on your Desktop for quick access to Seamless Mode WSL and its functionality.
+3. Download the [Bat script](https://github.com/Rm-fr-y/Kali-Linux-Seamless-Mode/blob/main/Start%20Kali.bat) and place it on your Desktop for quick access to Seamless Mode WSL and its functionality.
 
-4. Download the config file for VcXsrv and put it in a location where you won't delete it. Adjust the bat script to have the correct location for the config file where it says "CONFIG FILEPATH HERE"
+4. Download the [config file for VcXsrv](https://github.com/Rm-fr-y/Kali-Linux-Seamless-Mode/blob/main/config.xlaunch) and put it in a location where you won't delete it. Adjust the bat script to have the correct location for the config file where it says "CONFIG FILEPATH HERE"
 
-5. Download the Bash script here and place it in your WSL home directory ~/ (cd ~/).
+5. Download the [Bash script](https://github.com/Rm-fr-y/Kali-Linux-Seamless-Mode/blob/main/launch-kex.sh) and place it in your WSL home directory ~/ (cd ~/).
 
 6. Adjust the GDK and QT scales on the script to match your resolution.
 
