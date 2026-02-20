@@ -1,6 +1,6 @@
 Installing Seamless Mode in WSL -
 
-Prerequisites:
+Prerequisites: \
 Xlauncher/VcXsrv - https://sourceforge.net/projects/vcxsrv/ \
 Desktop Coral - https://www.donationcoder.com/Software/Mouser/desktopcoral/downloads/DesktopCoralSetup.exe \
 Kali WSL - https://www.kali.org/docs/wsl/wsl-preparations/
