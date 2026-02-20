@@ -12,9 +12,9 @@ Step by Step Guide:
 2. Edit the Kex script to update the IP connection to Vcxrv (I edited to adjust for OpenVPN connections)
 
 	1. Make sure to copy the script first -
-	
-		sudo cp /usr/bin/kex /usr/bin/kex.backup
-
+	```
+	sudo cp /usr/bin/kex /usr/bin/kex.backup
+	```
 	2. Adjust Kex IP address identification, find the line with
 
 ```
@@ -25,13 +25,13 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
   Comment out both of them, and adjust based on your configuration- \
   This is mine:
 
-		# Smart VPN IP Extractor
-		HOSTIP=$(/mnt/c/Windows/System32/ipconfig.exe | grep -A 10 "OpenVPN" | grep "IPv4 Address" | awk -F': ' '{print $2}' | tr -d '\r' | head -n 1)
+	# Smart VPN IP Extractor
+	HOSTIP=$(/mnt/c/Windows/System32/ipconfig.exe | grep -A 10 "OpenVPN" | grep "IPv4 Address" | awk -F': ' '{print $2}' | tr -d '\r' | head -n 1)
 
-		# Fallback if VPN is turned off
-		if [ -z "$HOSTIP" ]; then
-    			HOSTIP=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}')
-		fi
+	# Fallback if VPN is turned off
+	if [ -z "$HOSTIP" ]; then
+    		HOSTIP=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}')
+	fi
 
 3. Download the Bat script here and place it on your Desktop for quick access to Seamless Mode WSL and its functionality.
 
