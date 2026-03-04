@@ -82,3 +82,5 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 		start "" "C:\Program Files (x86)\DesktopCoral\DesktopCoral.exe" -placement top -dockheight PIXELCOUNT
 
 13. Use the .bat script to open Kali again and enjoy!
+
+<img width="2880" height="1620" alt="Kali Seamless Mode Running Image" src="https://github.com/user-attachments/assets/e0da0c2e-7d60-41bd-a3cc-b2de3e0d0e40" />
