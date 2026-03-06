@@ -83,4 +83,4 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 
 13. Use the .bat script to open Kali again and enjoy!
 
-<img width="2880" height="1620" alt="Kali Seamless Mode Running Image" src="https://github.com/user-attachments/assets/e0da0c2e-7d60-41bd-a3cc-b2de3e0d0e40" />
+<img width="1920" height="1080" alt="Screenshot of Kali Seamless Mode" src="https://github.com/user-attachments/assets/0786caec-f22a-4c8d-bd0c-be43b0061130" />
