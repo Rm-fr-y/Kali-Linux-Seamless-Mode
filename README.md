@@ -8,7 +8,9 @@ Kali WSL - https://www.kali.org/docs/wsl/wsl-preparations/
 Step by Step Guide:
 
 1. Open your Kali WSL installation and install Win-Kex (GUI for WSL).
-
+```
+sudo apt-get install win-kex
+```
 2. Edit the Kex script to update the IP connection to VcXsrv (I edited to adjust for OpenVPN connections)
 
 	1. Make sure to copy the script first -
