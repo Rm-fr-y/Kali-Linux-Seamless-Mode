@@ -41,11 +41,7 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 
 5. Download the [Bash script](https://github.com/Rm-fr-y/Kali-Linux-Seamless-Mode/blob/main/launch-kex.sh) and place it in your WSL home directory ~/ (cd ~/).
 
-6. Adjust the GDK and QT scales on the script to match your resolution.
-
-	- The default is from my system which has a 2880 x 1620 resolution with a 200% scale in Windows. Do your research to determine the best configuration for your system.
-
-7. Adjust the display settings for VcXsrv, this is a common configuration step if your Kali system is blurry at startup.
+6. Adjust the display settings for VcXsrv, this is a common configuration step if your Kali system is blurry at startup.
 
 	1. Navigate to C:\Program Files\VcXsrv\ in file explorer.
 
@@ -53,15 +49,23 @@ HOSTIP=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 
 	3. Check "Override high DPI scaling behavior" and make sure the Scaling is performed by Application.
 
-8. Start Kali-Linux for the first time by double clicking the bat script on your Desktop.
+7. Start Kali-Linux for the first time by double clicking the bat script on your Desktop.
 
-9. Disable the full screen desktop that opens up during startup.
+8. Disable the full screen desktop that opens up during startup.
 
 	1. Click the Dragon icon on the panel, and search for "Session and Startup".
 
 	2. Navigate to the Current Session section and find xdesktop and make sure its restart setting is set to Never.
 
 	3. Click the Save Session button.
+
+ 9. Adjust the Window Scaling if everything is too small.
+
+	1. Click the Dragon icon on the panel and search for "Appearance".
+
+	2. Navigate to the Settings section and find the Window Scaling and set it to 2x.
+    
+ 	3. Click the Close button after verifying changes.
 
 10. Adjust the panel size for your display.
 
